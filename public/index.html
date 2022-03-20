@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <title>Plantilla</title>
+</head>
+<body class="container">
+    <h1>Registrar Datos</h1>
+    <form action="empleados" method="post">
+        <div class="input-group input-group-lg mt-3">
+            <input type="number" name="numero" class="form-control" placeholder="Numero de Empleado">
+        </div>
+        <div class="input-group input-group-lg mt-3">
+            <input type="text" name="nombre" class="form-control me-3" placeholder="Nombre(s)" >
+            <input type="text" name="apellidos" class="form-control" placeholder="Apellidos" >
+        </div>
+        <div class="input-group input-group-lg mt-3">
+            <select class="form-select" name="categoria">
+                <option selected>Elegir una opción...</option>
+                <option value="Servicios Administrativos">Servicios Administrativos</option>
+                <option value="Analista Profesional">Analista Profesional</option>
+                <option value="Directora de Área">Directora de Área</option>
+                <option value="Auxiliar Especializado">Auxiliar Especializado</option>
+                <option value="Auxiliar Administrativo">Auxiliar Administrativo</option>
+                <option value="Especialista / Jefe de Área">Especialista / Jefe de Área</option>
+                <option value="Director de Área">Director de Área</option>
+                <option value="Técnica Calificada">Técnica Calificada</option>
+            </select>
+        </div>
+        <div class="input-group-lg mt-3">
+            <select class="form-select" name="adscripcion">
+              <option selected>Elegir una opción...</option>
+              <option value="Consejería Jurídica">Consejería Jurídica</option>
+              <option value="Delegación Administrativa">Delegación Administrativa</option>
+              <option value="Subconsejería de Legislación y Estudios Normativos">Subconsejería de Legislación y Estudios Normativos</option>
+            </select>
+          </div>
+          <div class="d-grid gap-2 col-6 mx-auto mt-3">
+            <button class="btn btn-primary btn-lg" type="submit">Enviar</button>
+          </div>
+    </form>
+</body>
+</html>
