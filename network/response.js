@@ -5,6 +5,7 @@ exports.success = (req, res, mensaje, header)=>{
     })
 }
 
+
 exports.error = (req, res, mensaje, header, detalles)=>{
     console.log('[Response Error] - ',detalles)
     res.status(header || 500).send({
